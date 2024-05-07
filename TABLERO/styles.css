@@ -1,0 +1,44 @@
+body{
+    display: flex;
+    height: 86vh;
+    width: 100%;
+    flex-direction: column;
+}
+
+.otro-color{
+    border: solid black;
+    height: 50%;
+    width: 50%;
+    border-radius: 20px;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    border: solid;
+    border-radius: 20px;
+}
+
+.derecho{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    gap: 100px;
+    border-radius: 20px;
+}
+
+.izquierdo{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.estilo-botones{
+    border-radius: 20px;
+    height: 70px;
+    background-color: white;
+}
