@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Camisas</title>
+    <link rel="stylesheet" href="tienda.css">
+</head>
+<body>
+    
+    <header>
+        <div class="navbar">
+            <div class="logo"><img src="https://i.pinimg.com/236x/3f/1c/45/3f1c45195723adba0786f1fe7fe284ad.jpg" alt="">
+            
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Catálogo</a>
+                        <div class="dropdown-content">
+                            <a href="#">Camisas</a>
+                            <a href="#">Pantalones</a>
+                            <a href="#">Gorras</a>
+                        </div>
+                    </li>
+                    
+                </ul>
+            </nav>
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar...">
+                <button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                  </svg></button>
+            </div>
+            <div class="cart">
+                <button id="cartBtn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                  </svg></button>
+            </div>
+        </div>
+    </header>
+    <div id="buyModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>¡Producto agregado al carrito!</p>
+        </div>
+    </div>
+
+    <div id="checkoutModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Pago exitoso</p>
+        </div>
+    </div>
+    <main>
+ 
+        <h1 class="promociontexto">♛ＧＲＡＮ ＰＲＯＭＯ♛</h1>
+        <div class="promo">
+            <img src="https://i.pinimg.com/236x/c9/b5/49/c9b549a33948cb480246b496254fbe93.jpg" alt="Promoción">
+            <img src="https://i.pinimg.com/236x/78/11/18/78111823200468baceef215aa9310624.jpg" alt="">
+            <img src="https://i.pinimg.com/474x/86/ea/fe/86eafef96b56a1cfa200257e3e1c2389.jpg" alt="">
+           
+        </div>
+        <section class="linea">r</section>
+        <div class="products">
+
+            
+            <div class="product">
+                <img src="https://i.pinimg.com/236x/5d/5d/02/5d5d02ef7681d129a2a2467ea84ce773.jpg" alt="Producto 1">
+                <p class="nombrep">Precio: $20</p>
+                <button class="buyBtn">Comprar</button>
+            </div>
+            <div class="product">
+                <img src="https://i.pinimg.com/236x/86/9d/80/869d802df72f49a5082487991e9d3fd6.jpg" alt="Producto 1">
+                <p class="nombrep">Precio: $20</p>
+                <button class="buyBtn">Comprar</button>
+            </div>
+            <div class="product">
+                <img src="https://i.pinimg.com/236x/f3/9d/39/f39d394919e9f1ac2744d064c98e5b00.jpg" alt="Producto 1">
+                <p class="nombrep">Precio: $20</p>
+                <button class="buyBtn">Comprar</button>
+            </div>
+            <div class="product">
+                <img src="https://i.pinimg.com/236x/f3/9d/39/f39d394919e9f1ac2744d064c98e5b00.jpg" alt="Producto 1">
+                <p class="nombrep">Precio: $20</p>
+                <button class="buyBtn">Comprar</button>
+            </div>
+            <div class="product">
+                <img src="https://i.pinimg.com/236x/ed/c2/c2/edc2c2aa0d31ee88c2267dce27333ed7.jpg" alt="Producto 1">
+                <p class="nombrep">Precio: $20</p>
+                <button class="buyBtn">Comprar</button>
+            </div>
+            <div class="product">
+                <img src="https://i.pinimg.com/236x/24/55/27/24552709124f7f16aa5ebb885c92bfcc.jpg" alt="Producto 1">
+                <p class="nombrep">Precio: $20</p>
+                <button class="buyBtn">Comprar</button>
+            </div>
+            <div class="product">
+                <img src="https://i.pinimg.com/236x/6b/a7/e9/6ba7e9cc5f92881ce59071e5dfea5464.jpg" alt="Producto 1">
+                <p class="nombrep">Precio: $20</p>
+                <button class="buyBtn">Comprar</button>
+            </div>
+            <div class="product">
+                <img src="https://i.pinimg.com/236x/24/55/27/24552709124f7f16aa5ebb885c92bfcc.jpg" alt="Producto 1">
+                <p class="nombrep">Precio: $20</p>
+                <button class="buyBtn">Comprar</button>
+            </div>
+            <div class="product">
+                <img src="https://i.pinimg.com/736x/db/2c/43/db2c4355a77e72ea7b36ca411cf8cdae.jpg" alt="Producto 1">
+                <p class="nombrep">Precio: $20</p>
+                <button class="buyBtn">Comprar</button>
+            </div>
+
+            <!-- Aquí van los productos -->
+            
+
+            <!-- Más productos aquí -->
+        </div>
+    </main>
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Carrito de Compras</h2>
+            <div id="cartItems">
+                <!-- Aquí van los productos agregados al carrito -->
+            </div>
+            <p>Total: <span id="totalPrice">$0</span></p>
+            <button id="checkoutBtn">Pagar</button>
+        </div>
+    </div>
+     <!-- vantana modal -->
+     <div id="myModal" class="modal">
+        <div class="modal-content">
+          <p>¡Se agregó al carrito!</p>
+        </div>
+      </div>
+      
+    <script src="script.js"></script>
+</body>
+</html>
